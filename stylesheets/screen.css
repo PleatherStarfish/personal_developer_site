@@ -107,6 +107,21 @@ p {
 }
 
 /* line 41, ../sass/screen.scss */
+.svg path {
+  fill: #868686 !important;
+}
+
+/* line 44, ../sass/screen.scss */
+.svg text {
+  fill: #868686 !important;
+}
+
+/* line 47, ../sass/screen.scss */
+.svg {
+  fill: #868686 !important;
+}
+
+/* line 51, ../sass/screen.scss */
 #headshot > img {
   display: block;
   background: transparent;
@@ -114,15 +129,15 @@ p {
   margin: 0 auto;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #headshot {
   position: relative;
   display: flex;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 18vh;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .main {
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
@@ -131,22 +146,62 @@ p {
   margin: 40px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
+.arrow {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  font-size: 16pt;
+}
+/* line 79, ../sass/screen.scss */
+.arrow:hover {
+  animation: bounce 1s;
+}
+
+/* line 84, ../sass/screen.scss */
 #tagline, #statement {
   position: relative;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #tagline {
   font-size: 18pt;
   line-height: 1.5em;
-  margin: 100px 18vw 50px 18vw;
+  margin: 10vh 18vw 50px 18vw;
   text-align: center;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #statement {
   margin: 15vh 18vw 50px 18vw;
   line-height: 1.5em;
   text-align: center;
+}
+
+/* line 101, ../sass/screen.scss */
+#resume {
+  font-size: 18pt;
+}
+
+/* line 105, ../sass/screen.scss */
+#social {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 30vw 0 30vw;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
