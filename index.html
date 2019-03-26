@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.11/jquery.scrollify.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" charset="utf-8"></script>
+
+    <script src="js/snap.js"></script>
+
+    <title>Daniel Miller, Full-Stack Developer</title>
+    <base href="/" />
+
+    <script>
+        $(function() {
+            $(".section").css({"height":$(window).height()});
+            $.scrollify({
+                section:".section"
+            });
+
+
+            $(".scroll").click(function(e) {
+                e.preventDefault();
+                $.scrollify("move",$(this).attr("href"));
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <section class="section first">
+
+        <div class="main">
+
+            <div id="headshot">
+                <img class="animated fadeInDown delay-1s" src="assets/images/headshot250.png" alt="headshot"></img>
+            </div>
+
+            <div>
+
+                <p id="tagline" class="animated fadeIn delay-2s slower">
+                    Hi! I’m Daniel. I’m a full-stack web developer with a passion for interactive media and design.
+                    I have over a decade of experience as a programmer, with a
+                    background in fine arts and academia. Most recently, I've been building software full time through
+                    a residency at <a href="https://www.recurse.com/">Recurse Center</a>
+                    in Brooklyn, New York.
+                </p>
+
+            </div>
+
+            <span style="transform: rotate(90deg);
+                  display: inline-block; text-align: center;">&#x2B81;</span>
+
+        </div>
+
+    </section>
+
+    <section class="section second">
+
+        <div class="main">
+
+            <p id="statement" class="animated fadeIn delay-2s slower">
+                I’m a Seattle transplanted currently based in New York. I came to software by way of academic research and
+                experimental art. As a sound artist I spent years developing software to generate sound and video from
+                algorithms and data sets. Eventually software came to dominate my creative practice, and in 2018 I transitioned
+                to a career as a full-stack developer through an 18-week batch at Recurse Center, a self-directed educational
+                retreat for professional and pre-professional developers in New York City. I love building tools that meet
+                specific needs through elegant and intuitive design, and I work on passion project related to 2D and 3D
+                graphics, animation, and data visualization.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

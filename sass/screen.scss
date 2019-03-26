@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #eafffc;
+}
+
+a {
+  color: #bde6e3;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  color: blue;
+}
+
+p {
+  font-size: 13pt;
+  font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+  line-height: 1.3em;
+  color: #868686;
+  text-align: center;
+}
+
+#headshot > img {
+  display: block;
+  background: transparent;
+  border-radius: 125px;
+  margin: 0 auto;
+}
+
+#headshot {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding-top: 180px;
+}
+
+.main {
+ width: calc(100vw - 80px);
+ height: calc(100vh - 80px);
+ background-color: white;
+ position: absolute;
+ margin: 40px;
+}
+
+#tagline, #statement {
+  position: relative;
+}
+
+#tagline {
+  font-size: 18pt;
+  line-height: 1.5em;
+  margin: 100px 18vw 50px 18vw;
+  text-align: center;
+}
+
+#statement {
+  margin: 15vh 18vw 50px 18vw;
+  line-height: 1.5em;
+  text-align: center;
+}
+
