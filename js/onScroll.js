@@ -19,9 +19,17 @@ $(document).ready(function() {
             }
         });
 
+        $('.scroll-animations-slow .animated').each(function() {
+            if (isScrolledIntoView(this) === true) {
+                $(this).addClass('bounceInRight');
+                $('.nav-parent').css("cssText", "opacity: 1 !important;");
+            }
+        });
+
         $('.fadein-animations .animated').each(function() {
             if (isScrolledIntoView(this) === true) {
                 $(this).addClass('fadeIn').css("opacity", "1");
+                $('#social').css("cssText", "opacity: 1 !important;");
             }
         });
 

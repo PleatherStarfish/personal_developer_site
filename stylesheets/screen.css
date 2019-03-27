@@ -127,43 +127,100 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 50px 30vw 0 30vw;
+  opacity: 0 !important;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
+.nav-parent {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  height: 100vw;
+  width: 100px;
+  left: calc(100vw - 100px);
+}
+
+/* line 124, ../sass/screen.scss */
+.nav-parent {
+  opacity: 0 !important;
+}
+
+/* line 128, ../sass/screen.scss */
+#nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 42vh;
+  height: 200px;
+  left: calc(100vw - 100px);
+  transform-origin: 50% 50%;
+  transform: translate(0, -66px);
+}
+
+/* line 140, ../sass/screen.scss */
 #email {
-  transform: rotate(-90deg);
-  transform-origin: left top 0;
+  transform: rotate(-90deg) translate(100%, -73.5px);
+  transform-origin: right bottom;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #email a {
-  font-size: 16pt;
-  font-family: Georgia, serif;
+  font-size: 14pt;
+  font-family: Palatino, serif;
+  letter-spacing: 0.08em;
+  right: 0;
+  bottom: 0;
+  height: 87.6px;
   color: #868686;
   text-decoration: none;
+  white-space: nowrap;
 }
-/* line 122, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #email a:hover {
   text-decoration: none;
   color: #97b8b5;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
+#dot1, #dot2 {
+  height: 6px;
+  width: 6px;
+  opacity: 1;
+  border-radius: 50%;
+  border: solid 1px;
+  color: #868686;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+/* line 172, ../sass/screen.scss */
+.verticalLine1 {
+  height: 50px;
+  border-left: 1px solid #868686;
+  transform: translate(3px, -66px);
+}
+
+/* line 177, ../sass/screen.scss */
+.verticalLine2 {
+  height: 50px;
+  border-left: 1px solid #868686;
+  transform: translate(3px, 0);
+}
+
+/* line 183, ../sass/screen.scss */
 .scroll-animations p {
   opacity: 0;
 }
 
-/* line 163, ../sass/screen.scss */
-.fadein-animations {
-  opacity: 1;
-}
-
-/* line 167, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .fadeindown-animations {
   opacity: 1;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .fadeinup-animations {
   opacity: 1;
 }

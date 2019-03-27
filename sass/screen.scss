@@ -107,61 +107,89 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 50px 30vw 0 30vw;
+  opacity: 0 !important;
+}
+
+.nav-parent {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  height:100vw;
+  width: 100px;
+  left: calc(100vw - 100px);
+}
+
+.nav-parent {
+  opacity: 0 !important;
+}
+
+#nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 42vh;
+  height: 200px;
+  left: calc(100vw - 100px);
+  transform-origin: 50% 50%;
+  transform: translate(0, -66px);
 }
 
 #email {
-  transform: rotate(-90deg);
-  transform-origin: left top 0;
+  transform: rotate(-90deg) translate(100%, -73.5px);
+  transform-origin: right bottom;
 }
 
 #email a {
-  font-size: 16pt;
-  font-family: Georgia, serif;
+  font-size: 14pt;
+  font-family: Palatino, serif;
+  letter-spacing: 0.08em;
+  right: 0;
+  bottom: 0;
+  height: 87.6px;
   color: #868686;
-  text-decoration:none;
+  text-decoration: none;
+  white-space: nowrap;
   &:hover {
     text-decoration: none;
     color: #97b8b5;
   }
 }
 
-//.email {
-//  display: flex;
-//  justify-content: center;
-//  margin-top: 10vh;
-//}
+#dot1, #dot2 {
+  height: 6px;
+  width: 6px;
+  opacity: 1;
+  border-radius: 50%;
+  border: solid 1px;
+  color: #868686;
+  display: inline-block;
+  background-color: #ffffff;
+}
 
-//.contactButton {
-//  background-color:#cccccc;
-//  -moz-border-radius:13px;
-//  -webkit-border-radius:13px;
-//  border-radius:13px;
-//  display:inline-block;
-//  cursor:pointer;
-//  color:#ffffff;
-//  font-size:18px;
-//  padding:16px 50px;
-//  text-decoration:none;
-//}
-//.contactButton a {
-//  color: #ffffff;
-//  text-decoration:none;
-//}
-//.contactButton:hover {
-//  background-color:#000000;
-//  text-decoration:none;
-//}
-//.contactButton:active {
-//  position:relative;
-//  top:1px;
-//}
+.verticalLine1 {
+  height: 50px;
+  border-left: 1px solid #868686;
+  transform: translate(3px, -66px);
+}
+.verticalLine2 {
+  height: 50px;
+  border-left: 1px solid #868686;
+  transform: translate(3px, 0);
+}
 
 .scroll-animations p {
   opacity: 0;
 }
 
+.scroll-animations-slow {
+  //opacity: 1;
+}
+
 .fadein-animations {
-  opacity: 1;
+  //opacity: 0;
 }
 
 .fadeindown-animations {
