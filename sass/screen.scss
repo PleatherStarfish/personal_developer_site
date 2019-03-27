@@ -3,8 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +17,7 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    color: #97b8b5;
   }
 }
 
@@ -76,9 +75,11 @@ p {
   width: 100%;
   justify-content: center;
   font-size: 16pt;
-  &:hover {
-    animation: bounce 1s;
-  }
+  color: #868686;
+}
+
+.arrowtext {
+  color: #868686;
 }
 
 #tagline, #statement {
@@ -93,7 +94,7 @@ p {
 }
 
 #statement {
-  margin: 15vh 18vw 50px 18vw;
+  margin: 18vh 18vw 50px 18vw;
   line-height: 1.5em;
   text-align: center;
 }
@@ -108,19 +109,65 @@ p {
   margin: 50px 30vw 0 30vw;
 }
 
-@keyframes bounce {
-  0%, 20%, 60%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+#email {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
 
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
+#email a {
+  font-size: 16pt;
+  font-family: Georgia, serif;
+  color: #868686;
+  text-decoration:none;
+  &:hover {
+    text-decoration: none;
+    color: #97b8b5;
   }
+}
 
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+//.email {
+//  display: flex;
+//  justify-content: center;
+//  margin-top: 10vh;
+//}
+
+//.contactButton {
+//  background-color:#cccccc;
+//  -moz-border-radius:13px;
+//  -webkit-border-radius:13px;
+//  border-radius:13px;
+//  display:inline-block;
+//  cursor:pointer;
+//  color:#ffffff;
+//  font-size:18px;
+//  padding:16px 50px;
+//  text-decoration:none;
+//}
+//.contactButton a {
+//  color: #ffffff;
+//  text-decoration:none;
+//}
+//.contactButton:hover {
+//  background-color:#000000;
+//  text-decoration:none;
+//}
+//.contactButton:active {
+//  position:relative;
+//  top:1px;
+//}
+
+.scroll-animations p {
+  opacity: 0;
+}
+
+.fadein-animations {
+  opacity: 1;
+}
+
+.fadeindown-animations {
+  opacity: 1;
+}
+
+.fadeinup-animations {
+  opacity: 1;
 }
