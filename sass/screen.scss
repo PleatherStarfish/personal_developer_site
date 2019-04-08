@@ -3,6 +3,8 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "_mobile.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -64,9 +66,16 @@ p {
 .main {
  width: calc(100vw - 80px);
  height: calc(100vh - 80px);
- background-color: white;
+ background-color: #ffffff;
  position: absolute;
  margin: 40px;
+}
+.main2 {
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  background-color: #ffffff;
+  position: absolute;
+  margin: 40px;
 }
 
 .arrow {

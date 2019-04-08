@@ -12,3 +12,7 @@ $.scrollify({
     updateHash: true,
     touchScroll: true,
 });
+
+if ($(window).width() < 600) {
+    $.scrollify.disable();
+}

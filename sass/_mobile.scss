@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+
+  .main {
+    width: calc(100vw - 40px) !important;
+    height: calc(100vh - 40px) !important;
+    background-color: #ffffff !important;
+    position: absolute !important;
+    margin: 20px !important;
+  }
+  .main2 {
+    width: calc(100vw - 40px) !important;
+    height: calc(100vh - 40px) !important;
+    background-color: #ffffff !important;
+    position: absolute !important;
+    margin: 20px !important;
+  }
+  #headshot {
+    padding-top: 9vh !important;
+
+    > img {
+      width: 150px !important;
+      height: 150px !important;
+    }
+  }
+  #tagline {
+    font-size: 12pt !important;
+    line-height: 1.5em !important;
+    margin: 10vh 10vw 50px 10vw !important;
+    text-align: center !important;
+  }
+  #nav {
+    left: calc(100vw - 43px) !important;
+  }
+  #statement {
+    margin: 8% !important;
+    line-height: 1.5em !important;
+    text-align: center !important;
+    font-size: 10pt !important;
+  }
+  #resume {
+    font-size: 12pt !important;
+  }
+  #social {
+    padding-top: 5vh;
+    margin: 0 auto !important;
+    flex-wrap: wrap !important;
+    width: 90% !important;
+  }
+
+}

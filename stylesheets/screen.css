@@ -2,29 +2,92 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 6, ../sass/screen.scss */
+@media screen and (max-width: 600px) {
+  /* line 3, ../sass/_mobile.scss */
+  .main {
+    width: calc(100vw - 40px) !important;
+    height: calc(100vh - 40px) !important;
+    background-color: #ffffff !important;
+    position: absolute !important;
+    margin: 20px !important;
+  }
+
+  /* line 10, ../sass/_mobile.scss */
+  .main2 {
+    width: calc(100vw - 40px) !important;
+    height: calc(100vh - 40px) !important;
+    background-color: #ffffff !important;
+    position: absolute !important;
+    margin: 20px !important;
+  }
+
+  /* line 17, ../sass/_mobile.scss */
+  #headshot {
+    padding-top: 9vh !important;
+  }
+  /* line 20, ../sass/_mobile.scss */
+  #headshot > img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  /* line 25, ../sass/_mobile.scss */
+  #tagline {
+    font-size: 12pt !important;
+    line-height: 1.5em !important;
+    margin: 10vh 10vw 50px 10vw !important;
+    text-align: center !important;
+  }
+
+  /* line 31, ../sass/_mobile.scss */
+  #nav {
+    left: calc(100vw - 43px) !important;
+  }
+
+  /* line 34, ../sass/_mobile.scss */
+  #statement {
+    margin: 8% !important;
+    line-height: 1.5em !important;
+    text-align: center !important;
+    font-size: 10pt !important;
+  }
+
+  /* line 40, ../sass/_mobile.scss */
+  #resume {
+    font-size: 12pt !important;
+  }
+
+  /* line 43, ../sass/_mobile.scss */
+  #social {
+    padding-top: 5vh;
+    margin: 0 auto !important;
+    flex-wrap: wrap !important;
+    width: 90% !important;
+  }
+}
+/* line 8, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 html {
   background-color: #eafffc;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 a {
   color: #bde6e3;
   text-decoration: none;
 }
-/* line 18, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 a:hover {
   text-decoration: underline;
   color: #97b8b5;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 h1 {
   font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
   font-style: normal;
@@ -33,7 +96,7 @@ h1 {
   color: blue;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 p {
   font-size: 13pt;
   font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
@@ -42,22 +105,22 @@ p {
   text-align: center;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .svg path {
   fill: #868686 !important;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 .svg text {
   fill: #868686 !important;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .svg {
   fill: #868686 !important;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 #headshot > img {
   display: block;
   background: transparent;
@@ -65,7 +128,7 @@ p {
   margin: 0 auto;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 #headshot {
   position: relative;
   display: flex;
@@ -73,16 +136,25 @@ p {
   padding-top: 18vh;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .main {
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
-  background-color: white;
+  background-color: #ffffff;
   position: absolute;
   margin: 40px;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
+.main2 {
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  background-color: #ffffff;
+  position: absolute;
+  margin: 40px;
+}
+
+/* line 81, ../sass/screen.scss */
 .arrow {
   display: flex;
   position: absolute;
@@ -92,17 +164,17 @@ p {
   color: #868686;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .arrowtext {
   color: #868686;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #tagline, #statement {
   position: relative;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 #tagline {
   font-size: 18pt;
   line-height: 1.5em;
@@ -110,19 +182,19 @@ p {
   text-align: center;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 #statement {
   margin: 18vh 18vw 50px 18vw;
   line-height: 1.5em;
   text-align: center;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #resume {
   font-size: 18pt;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 #social {
   display: flex;
   justify-content: space-between;
@@ -130,7 +202,7 @@ p {
   opacity: 0 !important;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .nav-parent {
   position: fixed;
   display: flex;
@@ -142,12 +214,12 @@ p {
   left: calc(100vw - 100px);
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .nav-parent {
   opacity: 0 !important;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #nav {
   position: fixed;
   display: flex;
@@ -160,13 +232,13 @@ p {
   transform: translate(0, -66px);
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #email {
   transform: rotate(-90deg) translate(100%, -73.5px);
   transform-origin: right bottom;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 #email a {
   font-size: 14pt;
   font-family: Palatino, serif;
@@ -178,13 +250,13 @@ p {
   text-decoration: none;
   white-space: nowrap;
 }
-/* line 155, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 #email a:hover {
   text-decoration: none;
   color: #97b8b5;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #dot1, #dot2 {
   height: 6px;
   width: 6px;
@@ -196,31 +268,31 @@ p {
   background-color: #ffffff;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .verticalLine1 {
   height: 50px;
   border-left: 1px solid #868686;
   transform: translate(3px, -66px);
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .verticalLine2 {
   height: 50px;
   border-left: 1px solid #868686;
   transform: translate(3px, 0);
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .scroll-animations p {
   opacity: 0;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .fadeindown-animations {
   opacity: 1;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .fadeinup-animations {
   opacity: 1;
 }
