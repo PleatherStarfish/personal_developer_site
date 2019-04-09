@@ -2,11 +2,11 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   /* line 3, ../sass/_mobile.scss */
   .main {
     width: calc(100vw - 40px) !important;
-    height: calc(100vh - 40px) !important;
+    min-height: 812px !important;
     background-color: #ffffff !important;
     position: absolute !important;
     margin: 20px !important;
@@ -15,7 +15,7 @@
   /* line 10, ../sass/_mobile.scss */
   .main2 {
     width: calc(100vw - 40px) !important;
-    height: calc(100vh - 40px) !important;
+    min-height: 812px !important;
     background-color: #ffffff !important;
     position: absolute !important;
     margin: 20px !important;
@@ -55,14 +55,16 @@
   /* line 40, ../sass/_mobile.scss */
   #resume {
     font-size: 12pt !important;
+    margin: 0 auto !important;
+    width: 60% !important;
   }
 
-  /* line 43, ../sass/_mobile.scss */
+  /* line 45, ../sass/_mobile.scss */
   #social {
     padding-top: 5vh;
     margin: 0 auto !important;
     flex-wrap: wrap !important;
-    width: 90% !important;
+    width: 60% !important;
   }
 }
 /* line 8, ../sass/screen.scss */
